@@ -2376,6 +2376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ball_red
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d218282f77a50149909bf403d2e6313, type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d218282f77a50149909bf403d2e6313, type: 3}
 --- !u!1 &612421970 stripped
@@ -2390,7 +2394,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612421970}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6d881b427ff3afd43a09d7b48b1a0649, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6193,6 +6197,65 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5478131450632737064, guid: 4f6229bd7107a1c48a9fa3b13952b5ea, type: 3}
+--- !u!1 &1146793552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146793553}
+  - component: {fileID: 1146793555}
+  - component: {fileID: 1146793554}
+  m_Layer: 0
+  m_Name: ClubCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146793553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146793552}
+  m_LocalRotation: {x: -0.12221571, y: 0, z: 0, w: 0.9925036}
+  m_LocalPosition: {x: 0, y: -0.74, z: -0.0142}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 304844337}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -14.04, y: 0, z: 0}
+--- !u!114 &1146793554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146793552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0225162023316a44a8933e2ce2dbc1ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Ball
+--- !u!65 &1146793555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146793552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0275, y: 0.0625, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1166851922
 PrefabInstance:
   m_ObjectHideFlags: 0
