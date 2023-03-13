@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Hole : MonoBehaviour
 {
+
+    public GameManager gameManager;
+    public string targetTag = "Ball";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,13 @@ public class Hole : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag(targetTag))
+        {
+            gameManager.GoToNextHole();
+        }
     }
 }
