@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AddSpeedOnTriggerEnter : MonoBehaviour
 {
+    public GameManager GameManager;
+
     public string targetTag;
 
     private Collider clubCollider;
@@ -42,6 +44,8 @@ public class AddSpeedOnTriggerEnter : MonoBehaviour
 
             Rigidbody rb = other.attachedRigidbody;
             rb.velocity = projectedVelocity;
+
+            GameManager.currentHitNumber++;
         }
     }
 }
